@@ -6,14 +6,14 @@ const BRAND = '#4f46e5';
 const BRAND_GRADIENT = 'linear-gradient(135deg, #4f46e5, #7c3aed)';
 const BRAND_LIGHT = '#eef2ff';
 
-const localeNames = {
-  en: 'English',
-  zh: '中文',
-  es: 'Español',
-  fr: 'Français',
-  de: 'Deutsch',
-  ja: '日本語',
-  ko: '한국어',
+const localeMeta = {
+  en: { flag: '🇺🇸', name: 'English' },
+  zh: { flag: '🇨🇳', name: '中文' },
+  es: { flag: '🇪🇸', name: 'Español' },
+  fr: { flag: '🇫🇷', name: 'Français' },
+  de: { flag: '🇩🇪', name: 'Deutsch' },
+  ja: { flag: '🇯🇵', name: '日本語' },
+  ko: { flag: '🇰🇷', name: '한국어' },
 };
 
 const t = {
@@ -244,7 +244,7 @@ const t = {
     heroBadge: 'Gratuit · Sans inscription',
     heroTitle1: 'Générez des',
     heroTitle2: 'Plans de Site',
-    heroDesc: 'Entrez les URLs du site web pour explorer automatiquement les pages et générer des fichiers de plan de site conformes au protocole sitemaps.org. Prend en charge les formats d\'exportation XML, HTML et TXT pour Google, Bing et Baidu.',
+    heroDesc: "Entrez les URLs du site web pour explorer automatiquement les pages et générer des fichiers de plan de site conformes au protocole sitemaps.org. Prend en charge les formats d\'exportation XML, HTML et TXT pour Google, Bing et Baidu.",
     toolTitle: 'Générez votre Plan de Site',
     toolDesc: 'Prend en charge plusieurs URLs, une par ligne',
     urlLabel: 'URLs du site web',
@@ -255,7 +255,7 @@ const t = {
     formatHtml: 'Format HTML',
     formatHtmlDesc: 'Page de navigation pour utilisateurs',
     formatTxt: 'Format TXT',
-    formatTxtDesc: 'Liste d\'URLs en texte brut',
+    formatTxtDesc: "Liste d\'URLs en texte brut",
     seoTitle: 'Options SEO',
     seoPriority: 'Priorité intelligente',
     seoPriorityDesc: 'Attribution automatique basée sur la profondeur',
@@ -266,12 +266,12 @@ const t = {
     btnGenerate: 'Générer le Sitemap',
     btnGenerating: 'Exploration...',
     errEmpty: 'Veuillez entrer au moins une URL',
-    errInvalid: 'Format d\'URL invalide',
+    errInvalid: "Format d\'URL invalide",
     errNoResult: 'Aucune page trouvée. Veuillez vérifier si le site web est accessible.',
     errGeneric: 'Échec de la requête',
     logUrls: 'URLs',
     resultXml: 'Code XML',
-    resultUrls: 'Liste d\'URLs',
+    resultUrls: "Liste d\'URLs",
     resultHtml: 'Aperçu HTML',
     btnCopy: 'Copier',
     btnDownloadXml: 'Télécharger XML',
@@ -288,7 +288,7 @@ const t = {
     feat4Title: 'Export Multi-formats',
     feat4Desc: 'Prend en charge les formats XML (indexation moteurs de recherche), HTML (navigation utilisateurs) et TXT (liste texte brut).',
     feat5Title: 'Paramètres Intelligents',
-    feat5Desc: 'Calcule automatiquement priority et changefreq basé sur la profondeur de l\'URL. Aucune configuration manuelle requise.',
+    feat5Desc: "Calcule automatiquement priority et changefreq basé sur la profondeur de l\'URL. Aucune configuration manuelle requise.",
     feat6Title: 'Confidentialité Sécurisée',
     feat6Desc: 'Aucun enregistrement de compte requis. Aucune donnée personnelle collectée. Les données explorées sont uniquement utilisées pour générer des fichiers et jamais stockées.',
     guideTitle: 'Comment ça Marche',
@@ -304,6 +304,150 @@ const t = {
     aboutDesc2: 'Note : Certains sites web ont des mécanismes anti-exploration, nécessitent un rendu JavaScript ou sont protégés par connexion. Ces pages peuvent ne pas être collectées correctement.',
     footer: 'Sylveris Sitemap',
     langSwitch: 'Langue',
+  },
+  de: {
+    siteName: 'Sylveris Sitemap',
+    title: 'Sylveris Sitemap - Kostenloser Sitemap-Generator | XML Sitemap Tool',
+    desc: 'Sylveris Sitemap ist ein kostenloses Online-Tool zum Erstellen von Sitemaps, das die Formate XML, HTML und TXT unterstützt. Crawlt automatisch Webseiten und generiert Sitemap-Dateien, die den Standards von Google, Bing und Baidu entsprechen.',
+    keywords: 'sitemap generator, XML sitemap, sitemap tool, kostenloser sitemap maker, SEO sitemap, sitemap erstellen, website sitemap, Google sitemap',
+    navTool: 'Tool',
+    navFeatures: 'Funktionen',
+    navGuide: 'Anleitung',
+    heroBadge: 'Kostenlos · Keine Anmeldung',
+    heroTitle1: 'Generiere',
+    heroTitle2: 'Sitemaps',
+    heroDesc: 'Gib Website-URLs ein, um Seiten automatisch zu crawlen und Sitemap-Dateien zu generieren, die dem sitemaps.org-Protokoll entsprechen. Unterstützt XML-, HTML- und TXT-Exportformate für Google, Bing und Baidu.',
+    toolTitle: 'Generiere deine Sitemap',
+    toolDesc: 'Unterstützt mehrere URLs, eine pro Zeile',
+    urlLabel: 'Website-URLs',
+    urlPlaceholder: 'https://example.com\nhttps://another-site.com',
+    formatTitle: 'Ausgabeformat',
+    formatXml: 'XML-Format',
+    formatXmlDesc: 'Standardprotokoll für Suchmaschinen',
+    formatHtml: 'HTML-Format',
+    formatHtmlDesc: 'Benutzernavigationsseite',
+    formatTxt: 'TXT-Format',
+    formatTxtDesc: 'Klartext-URL-Liste',
+    seoTitle: 'SEO-Optionen',
+    seoPriority: 'Intelligente Priorität',
+    seoPriorityDesc: 'Automatische Zuweisung basierend auf Tiefe',
+    seoLastmod: 'Zuletzt geändert',
+    seoLastmodDesc: 'Lastmod-Tag einbeziehen',
+    seoChangefreq: 'Änderungsfrequenz',
+    seoChangefreqDesc: 'Changefreq-Tag festlegen',
+    btnGenerate: 'Sitemap generieren',
+    btnGenerating: 'Crawling...',
+    errEmpty: 'Bitte gib mindestens eine URL ein',
+    errInvalid: 'Ungültiges URL-Format',
+    errNoResult: 'Keine Seiten gefunden. Bitte prüfe, ob die Website erreichbar ist.',
+    errGeneric: 'Anfrage fehlgeschlagen',
+    logUrls: 'URLs',
+    resultXml: 'XML-Code',
+    resultUrls: 'URL-Liste',
+    resultHtml: 'HTML-Vorschau',
+    btnCopy: 'Kopieren',
+    btnDownloadXml: 'XML herunterladen',
+    btnDownloadTxt: 'TXT herunterladen',
+    btnDownloadHtml: 'HTML herunterladen',
+    featuresTitle: 'Funktionen',
+    featuresDesc: 'Warum Sylveris Sitemap wählen',
+    feat1Title: 'Echtes Crawling',
+    feat1Desc: 'Greift auf Zielwebsites über HTTP-Anfragen zu und analysiert tatsächliche Seitenlinks. Es werden keine gefälschten URLs generiert.',
+    feat2Title: 'Multi-Site-Unterstützung',
+    feat2Desc: 'Crawle mehrere Websites in einem Auftrag. Ergebnisse automatisch zusammenführen und Duplikate entfernen.',
+    feat3Title: 'Standardkonform',
+    feat3Desc: 'Befolgt strikt das sitemaps.org-Protokoll. Generierte XML-Dateien können direkt an Google, Bing und Baidu übermittelt werden.',
+    feat4Title: 'Multi-Format-Export',
+    feat4Desc: 'Unterstützt XML (Suchmaschinen-Indexierung), HTML (Benutzernavigation) und TXT (Klartext-Liste).',
+    feat5Title: 'Intelligente Parameter',
+    feat5Desc: 'Berechnet automatisch Priority und Changefreq basierend auf URL-Tiefe. Keine manuelle Konfiguration erforderlich.',
+    feat6Title: 'Datenschutz sicher',
+    feat6Desc: 'Keine Kontoanmeldung erforderlich. Keine personenbezogenen Daten werden gesammelt. Gecrawlte Daten werden nur zur Dateigenerierung verwendet und nie gespeichert.',
+    guideTitle: 'So funktioniert es',
+    guideDesc: 'Drei Schritte zur Sitemap-Generierung',
+    step1Title: 'URLs eingeben',
+    step1Desc: 'Gib eine oder mehrere Webadressen in das Textfeld ein, eine pro Zeile, beginnend mit http:// oder https://.',
+    step2Title: 'Optionen wählen',
+    step2Desc: 'Wähle gewünschte Ausgabeformate und SEO-Parameter entsprechend deinen Bedürfnissen.',
+    step3Title: 'Herunterladen & Bereitstellen',
+    step3Desc: 'Lade die generierte Datei herunter, lade sitemap.xml in das Stammverzeichnis deiner Website hoch und übermittle sie an die Suchmaschinen-Konsolen.',
+    aboutTitle: 'Über Sylveris Sitemap',
+    aboutDesc1: 'Sylveris Sitemap crawlt HTML-Seiten von Zielwebsites über HTTP-Anfragen, extrahiert Links für rekursive Sammlung. Max. Tiefe: 5 Ebenen, max. 200 URLs pro Website, keine Begrenzung der Website-Anzahl pro Auftrag.',
+    aboutDesc2: 'Hinweis: Einige Websites haben Anti-Crawling-Mechanismen, erfordern JavaScript-Rendering oder sind durch Login geschützt. Solche Seiten können möglicherweise nicht korrekt erfasst werden.',
+    footer: 'Sylveris Sitemap',
+    langSwitch: 'Sprache',
+  },
+  ja: {
+    siteName: 'Sylveris Sitemap',
+    title: 'Sylveris Sitemap - 無料サイトマップ生成ツール | XML Sitemap ツール',
+    desc: 'Sylveris Sitemapは、XML、HTML、TXT形式のエクスポートをサポートする無料のオンラインサイトマップ生成ツールです。Webサイトを自動的にクロールし、Google、Bing、Baiduの検索エンジン標準に準拠したサイトマップファイルを生成します。',
+    keywords: 'サイトマップ生成ツール, XMLサイトマップ, サイトマップツール, 無料サイトマップ作成, SEOサイトマップ, サイトマップ作成, ウェブサイトマップ, Googleサイトマップ',
+    navTool: 'ツール',
+    navFeatures: '機能',
+    navGuide: 'ガイド',
+    heroBadge: '無料 · 登録不要',
+    heroTitle1: '無料で',
+    heroTitle2: 'サイトマップを生成',
+    heroDesc: 'WebサイトのURLを入力すると、ページを自動的にクロールし、sitemaps.orgプロトコルに準拠したサイトマップファイルを生成します。XML、HTML、TXTの3形式に対応し、Google、Bing、Baiduなどの検索エンジンに対応しています。',
+    toolTitle: 'サイトマップを生成',
+    toolDesc: '複数のURLを同時に入力可能（1行に1つ）',
+    urlLabel: 'WebサイトURL',
+    urlPlaceholder: 'https://example.com\nhttps://another-site.com',
+    formatTitle: '出力形式',
+    formatXml: 'XML形式',
+    formatXmlDesc: '検索エンジン標準プロトコル',
+    formatHtml: 'HTML形式',
+    formatHtmlDesc: 'ユーザーナビゲーションページ',
+    formatTxt: 'TXT形式',
+    formatTxtDesc: 'プレーンテキストURLリスト',
+    seoTitle: 'SEOオプション',
+    seoPriority: 'スマート優先度',
+    seoPriorityDesc: 'ページ深度に基づく自動割り当て',
+    seoLastmod: '最終更新日',
+    seoLastmodDesc: 'lastmodタグを含める',
+    seoChangefreq: '更新頻度',
+    seoChangefreqDesc: 'changefreqタグを設定',
+    btnGenerate: 'サイトマップを生成',
+    btnGenerating: 'クロール中...',
+    errEmpty: '少なくとも1つのURLを入力してください',
+    errInvalid: 'URL形式が無効です',
+    errNoResult: 'ページが見つかりませんでした。Webサイトにアクセスできるか確認してください。',
+    errGeneric: 'リクエストに失敗しました',
+    logUrls: '件のURL',
+    resultXml: 'XMLコード',
+    resultUrls: 'URLリスト',
+    resultHtml: 'HTMLプレビュー',
+    btnCopy: 'コピー',
+    btnDownloadXml: 'XMLをダウンロード',
+    btnDownloadTxt: 'TXTをダウンロード',
+    btnDownloadHtml: 'HTMLをダウンロード',
+    featuresTitle: '機能特徴',
+    featuresDesc: 'Sylveris Sitemapを選ぶ理由',
+    feat1Title: '実際のクロール',
+    feat1Desc: 'HTTPリクエストで対象Webサイトにアクセスし、実際に存在するページリンクを解析します。偽のURLは生成しません。',
+    feat2Title: 'マルチサイト対応',
+    feat2Desc: '1回のタスクで複数のWebサイトを同時にクロールし、自動的に重複を排除して統一されたサイトマップファイルを生成します。',
+    feat3Title: '標準準拠',
+    feat3Desc: 'sitemaps.orgプロトコルを厳密に遵守し、生成されたXMLファイルはGoogle、Bing、Baiduなどの検索エンジンに直接提出可能です。',
+    feat4Title: '多形式エクスポート',
+    feat4Desc: 'XML（検索エンジン索引）、HTML（ユーザーナビゲーション）、TXT（プレーンテキストリスト）の3形式を同時にサポートします。',
+    feat5Title: 'スマートパラメータ',
+    feat5Desc: 'URLの深度に基づいてpriorityとchangefreqを自動計算します。各ページの手動設定は不要です。',
+    feat6Title: 'プライバシー安全',
+    feat6Desc: 'アカウント登録不要。個人情報を収集しません。クロールデータはファイル生成のみに使用し、一切保存しません。',
+    guideTitle: '使用ガイド',
+    guideDesc: '3ステップでサイトマップ生成完了',
+    step1Title: 'URLを入力',
+    step1Desc: 'テキストボックスに1つまたは複数のWebサイトアドレスを入力します（1行に1つ、http://またはhttps://で始めてください）。',
+    step2Title: '設定を選択',
+    step2Desc: '必要な出力形式とSEOパラメータをチェックし、ニーズに応じて生成内容をカスタマイズします。',
+    step3Title: 'ダウンロードとデプロイ',
+    step3Desc: '生成完了後にファイルをダウンロードし、sitemap.xmlをWebサイトのルートディレクトリにアップロードして検索エンジンコンソールに提出します。',
+    aboutTitle: 'Sylveris Sitemapについて',
+    aboutDesc1: 'Sylveris SitemapはHTTPリクエストを通じて対象WebサイトのHTMLページをクロールし、リンクを抽出して再帰的に収集します。最大深度：5層、1サイト最大200URL、1回のタスクでサポートするサイト数に制限はありません。',
+    aboutDesc2: '注意：一部のWebサイトにはアンチクロール機構、JavaScriptレンダリングが必要なページ、またはログイン保護されたページがあります。このようなページは正しく収集できない場合があります。',
+    footer: 'Sylveris Sitemap',
+    langSwitch: '言語',
   },
   ko: {
     siteName: 'Sylveris Sitemap',
@@ -395,13 +539,26 @@ export default function Home() {
   const [results, setResults] = useState(null);
   const [tab, setTab] = useState('xml');
   const [err, setErr] = useState('');
+  const [langOpen, setLangOpen] = useState(false);
   const logRef = useRef(null);
+  const langRef = useRef(null);
 
   useEffect(() => { if (logRef.current) logRef.current.scrollTop = logRef.current.scrollHeight; }, [logs]);
+
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (langRef.current && !langRef.current.contains(e.target)) {
+        setLangOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const toggle = (k) => setOpts(p => ({ ...p, [k]: !p[k] }));
 
   const switchLang = (nextLocale) => {
+    setLangOpen(false);
     router.push(router.pathname, router.asPath, { locale: nextLocale });
   };
 
@@ -544,7 +701,7 @@ export default function Home() {
         :root { --bg:#f8fafc; --card:#ffffff; --text:#0f172a; --muted:#64748b; --border:#e2e8f0; --accent:#4f46e5; --accent-light:#eef2ff; --accent-hover:#4338ca; --danger:#dc2626; --danger-bg:#fef2f2; --success:#16a34a; --shadow:0 4px 6px -1px rgba(0,0,0,0.05),0 2px 4px -2px rgba(0,0,0,0.05); --shadow-lg:0 10px 15px -3px rgba(0,0,0,0.07),0 4px 6px -4px rgba(0,0,0,0.05); }
         * { margin:0;padding:0;box-sizing:border-box }
         body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.6 }
-        input:focus,textarea:focus,button:focus,select:focus { outline:2px solid var(--accent); outline-offset:2px }
+        input:focus,textarea:focus,button:focus { outline:2px solid var(--accent); outline-offset:2px }
         a { color:var(--accent); text-decoration:none }
         a:hover { text-decoration:underline }
       `}</style>
@@ -560,19 +717,31 @@ export default function Home() {
               <a href="#tool" style={{ color:'var(--muted)',fontSize:'0.875rem',fontWeight:500 }}>{tx.navTool}</a>
               <a href="#features" style={{ color:'var(--muted)',fontSize:'0.875rem',fontWeight:500 }}>{tx.navFeatures}</a>
               <a href="#guide" style={{ color:'var(--muted)',fontSize:'0.875rem',fontWeight:500 }}>{tx.navGuide}</a>
-              <select
-                value={locale}
-                onChange={e => switchLang(e.target.value)}
-                style={{ background:'var(--accent-light)',color:'var(--accent)',border:'none',borderRadius:6,padding:'0.375rem 0.875rem',fontSize:'0.875rem',fontWeight:600,cursor:'pointer' }}
-              >
-                <option value="en">English</option>
-                <option value="zh">中文</option>
-                <option value="es">Español</option>
-                <option value="fr">Français</option>
-                <option value="de">Deutsch</option>
-                <option value="ja">日本語</option>
-                <option value="ko">한국어</option>
-              </select>
+
+              {/* 语言切换图标按钮 */}
+              <div ref={langRef} style={{ position:'relative' }}>
+                <button
+                  onClick={() => setLangOpen(v => !v)}
+                  style={{ background:'var(--accent-light)',color:'var(--accent)',border:'none',borderRadius:8,padding:'0.5rem',fontSize:'1.25rem',cursor:'pointer',display:'flex',alignItems:'center',justifyContent:'center',width:36,height:36 }}
+                  title={tx.langSwitch}
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </button>
+                {langOpen && (
+                  <div style={{ position:'absolute',top:44,right:0,background:'white',border:'1px solid var(--border)',borderRadius:10,boxShadow:'var(--shadow-lg)',padding:'0.5rem 0',minWidth:160,zIndex:200 }}>
+                    {Object.entries(localeMeta).map(([code, meta]) => (
+                      <button
+                        key={code}
+                        onClick={() => switchLang(code)}
+                        style={{ display:'flex',alignItems:'center',gap:8,width:'100%',padding:'0.5rem 1rem',border:'none',background:code===locale?'var(--accent-light)':'transparent',color:code===locale?'var(--accent)':'var(--text)',fontSize:'0.875rem',fontWeight:code===locale?600:400,cursor:'pointer',textAlign:'left',whiteSpace:'nowrap' }}
+                      >
+                        <span style={{ fontSize:'1rem' }}>{meta.flag}</span>
+                        <span>{meta.name}</span>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </nav>

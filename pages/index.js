@@ -674,6 +674,8 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Sylveris" />
         <link rel="canonical" href={canonical} />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         <link rel="alternate" hrefLang="en" href={baseUrl + '/en'} />
         <link rel="alternate" hrefLang="zh" href={baseUrl + '/zh'} />
         <link rel="alternate" hrefLang="es" href={baseUrl + '/es'} />
